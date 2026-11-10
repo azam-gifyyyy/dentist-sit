@@ -1,0 +1,69 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-forest: #193B35;
+    --color-ivory: #F7F6F1;
+    --color-sage: #E5ECE6;
+    --color-terracotta: #BC8972;
+    --color-dark: #242B28;
+    --color-forest-dark: #122B27;
+    --color-sage-light: #F0F4F1;
+    --color-border-subtle: rgba(25, 59, 53, 0.12);
+  }
+
+  html {
+    scroll-behavior: smooth;
+    background-color: var(--color-ivory);
+    color: var(--color-dark);
+    font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  ::selection {
+    background-color: #193B35;
+    color: #F7F6F1;
+  }
+}
+
+.font-serif-display {
+  font-family: 'DM Serif Display', Georgia, serif;
+}
+
+.font-sans-body {
+  font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+/* Subdued custom utility styles matching the editorial identity */
+.bg-forest { background-color: #193B35; }
+.text-forest { color: #193B35; }
+.border-forest { border-color: #193B35; }
+
+.bg-ivory { background-color: #F7F6F1; }
+.text-ivory { color: #F7F6F1; }
+
+.bg-sage { background-color: #E5ECE6; }
+.text-sage { color: #E5ECE6; }
+.border-sage { border-color: #E5ECE6; }
+
+.bg-terracotta { background-color: #BC8972; }
+.text-terracotta { color: #BC8972; }
+.border-terracotta { border-color: #BC8972; }
+
+.text-dark { color: #242B28; }
+.border-dark-subtle { border-color: rgba(36, 43, 40, 0.12); }
+.border-forest-subtle { border-color: rgba(25, 59, 53, 0.12); }
+.border-terracotta-subtle { border-color: rgba(188, 137, 114, 0.25); }
+
+/* Custom smooth transitions respecting prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

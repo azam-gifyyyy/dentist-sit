@@ -1,0 +1,6 @@
+{
+  "name": "Morrow Dental Studio",
+  "description": "A refined, boutique dental studio website crafted with editorial calm, thoughtful care, and modern clinical clarity.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
